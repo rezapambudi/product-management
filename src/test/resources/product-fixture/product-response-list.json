@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "test product 1",
+    "price": 1,
+    "quantity": 0,
+    "imageUrl": "https://example.com/1-images.png"
+  },
+  {
+    "id": 2,
+    "name": "test product 2",
+    "price": 1,
+    "quantity": 0,
+    "imageUrl": "https://example.com/2-images.png"
+  }
+]

@@ -1,0 +1,6 @@
+.gradle/
+build/
+.idea/
+HELP.md
+*.env
+db/

@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  ecommerce:
+    container_name: backend
+    build:
+      dockerfile: "Dockerfile"
+    env_file:
+      - ./.env
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    env_file:
+      - ./db/db.env
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db/volumes:/var/lib/mysql
